@@ -4,13 +4,17 @@ body{
     margin: 0;
     font-family: sans-serif;
 }
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 :root{
     --azul: #32b9cd;
     --amarela: #e3b062;
+    --rosa: #e362b8;
 }
-
-/* header*/
 
 .header{
     background-color: black;
@@ -114,4 +118,73 @@ body{
 }
 .footer h4{
     margin-bottom: 0;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    width: 100%;
+    background-image: url(../assets/imgs/bg-jelly-fish-para-home.png);
+    background-size: cover;
+}
+.footer2{
+    height: 30px;
+    width: 100%;
+    background: var(--azul);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 208, 208);
+    width: 50%;
+    height: 500px;
+    border-radius: 20px;
+}
+.card .card-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    color: var(--rosa);
+}
+.card .formulario span{
+    color: var(--rosa);
+}
+.card .formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.card .formulario input{
+    border-radius: 5px;
+    border-color: cyan;
+    width: 500px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.card .formulario input{
+    border-radius: 5px;
+    border-color: cyan;
+    width: 500px;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+.card .formulario input::placeholder {
+    text-align: center;
+}
+.card .formulario button{
+    border-radius: 5px;
+    border-color: var(--rosa);
+    background-color: var(--rosa);
+    color: white;
+    width: 50%;
+    padding: 10px;
 }
